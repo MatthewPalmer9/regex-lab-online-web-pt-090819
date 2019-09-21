@@ -4,7 +4,7 @@ end
 
 def words_starting_with_un_and_ending_with_ing(text)
   newArray = []
-  if text.start_with?(/[u]/) && text.end_with?(/[g]/)
+  if text.start_with?("un") && text.end_with?("ing")
     newArray.push(text)
   end
   newArray
