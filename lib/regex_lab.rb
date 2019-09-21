@@ -18,8 +18,10 @@ def words_five_letters_long(text)
   finalArray = []
   newArray.each(){ |word| 
     if word.length == 5
-      
+      finalArray.push(word)
+    end
   }
+  finalArray
 end
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
