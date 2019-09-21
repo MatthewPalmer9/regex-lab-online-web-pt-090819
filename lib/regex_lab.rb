@@ -3,11 +3,14 @@ def starts_with_a_vowel?(word)
 end
 
 def words_starting_with_un_and_ending_with_ing(text)
-  newArray = []
-  if text.start_with?("un") && text.end_with?("ing")
-    newArray.push(text)
-  end
-  newArray
+  newArray = text.split()
+  finalArray = []
+  newArray.each(){ |word| 
+    if word.start_with?("un") && word.end_with?("ing")
+      finalArray.push(word)
+    end 
+  }
+  finalArray
 end
 
 def words_five_letters_long(text)
