@@ -25,9 +25,9 @@ def words_five_letters_long(text)
 end
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
-  if text[0] == text[0].capitalize && (text.end_with?(".") || text.emd_with?("?") || text.end_with("!"))
+  if text[0] == text[0].capitalize && (text.end_with?(".") || text.end_with?("?") || text.end_with("!"))
     p true 
-  else
+  elsif text[0] == text
     p false 
   end
 end
